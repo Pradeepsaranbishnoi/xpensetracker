@@ -6,8 +6,8 @@ import "./App.css";
 
 Modal.setAppElement("#root");
 
-const CATEGORIES = ["Food", "Transport", "Shopping", "Health", "Other"];
-const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042", "#8884D8"];
+const CATEGORIES = ["Food", "Travel", "Entertainment"];
+const COLORS = ["#0088FE", "#00C49F", "#FFBB28"];
 
 function App() {
   const [wallet, setWallet] = useState(() => parseFloat(localStorage.getItem("wallet")) || 5000);
@@ -113,7 +113,8 @@ function App() {
       </div>
 
       <div className="expense-list">
-        <h3>Expense History</h3>
+         <h2>Expenses</h2>
+          <h3>Transactions</h3>
         {expenses.map((exp, index) => (
           <div className="expense-item" key={index}>
             <div>
