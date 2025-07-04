@@ -7,7 +7,7 @@ import "./App.css";
 Modal.setAppElement("#root");
 
 const CATEGORIES = ["Food", "Travel", "Entertainment"];
-const COLORS = ["#0088FE", "#00C49F", "#FFBB28"];
+const COLORS = ["#0088FE", "#00C49F", "#FFBB28"]; 
 
 function App() {
   const [wallet, setWallet] = useState(() => parseFloat(localStorage.getItem("wallet")) || 5000);
